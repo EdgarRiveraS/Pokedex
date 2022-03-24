@@ -27,7 +27,7 @@ jobs:
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "index.html" # App source code path
+          app_location: "https://github.com/EdgarRiveraS/Pokedex/blob/4d217f90e5c7d8f800dda26dc0d943996d297b16/index.html" # App source code path
           api_location: "https://pokeapi.co/api/v2/" # Api source code path - optional
           output_location: "" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
