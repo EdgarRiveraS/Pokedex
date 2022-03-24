@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Imagenes/PokebolaLogo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedex</title>    
+</head>
+<body>
+  <div id = "app" class = "caja">
+    <table border ="1" class ="border" >
+      <tr>
+          <th width = 20% class = "basePokedex"></th>
+          <th width = 40% class = "basePokedex"><h1>Pokedex</h1></th>
+          <th width = 20% class = "layer"><img src="./Imagenes/Pokemon.png" alt="" width = "100"></th>
+      </tr>
+      <tr height="150" class = "basePokedex">
+          <th></th>
+          <th id = "pokeCard"><button onclick="buscarAnterior()"><img src="./Imagenes/hand-point-left.svg" width="20px"></button><img src="./Imagenes/Shadow.png" alt="Pokemon" id="pokeImg" width="150px"><button onclick="buscarSiguiente()"><img src="./Imagenes/hand-point-right.svg" width="20px"></button></th>
+          <th><label id = "pokeNombre"><h2>Pokemon</h2></label></th>
+      </tr>
+      <tr height="50" class = "basePokedex">
+          <th><h3>Tipo :</h3></th>
+          <th><label id = "pokeType">default</label></th>
+          <th>
+              <input type="text" placeholder="Busca tu Pokemon" id="pokeName" name="pokeName">
+              <button onclick="buscarPokemon()">Buscar Pokemon</button>
+         </th>
+      </tr>
+      <tr height="150" class = "basePokedex">
+        <th ><h3>Estadisticas :</h3></th>
+        <th><label id = pokeStadisticas>0cm</label></th>
+        <th></th>
+      </tr>
+      <tr height="50" class = "basePokedex">
+        <th><h3>ID :</h3></th>
+        <th ><label id = "pokeId">---</label></th>
+        <th></th>
+      </tr>
+    </table> 
+  </div>
+<footer>
+  <script src="./pokedex.js"></script>
+</footer>
+</body>
+
+</html>

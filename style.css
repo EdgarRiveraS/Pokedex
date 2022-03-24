@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width: 90%;
+    margin:0 auto;
+    background:aquamarine;
+}
+
+button:focus{
+    outline: none;
+}
+button:hover{
+    transform: scale(0.98);
+}
+.caja{
+    width:90%;
+    float:left;
+    margin:1%;
+}
+.basePokedex{
+    background-color: rgb(243, 79, 79);
+}
+.layer{
+    background-color: white;
+}
+.border{
+    border-width: 3px;
+    border-color: black;
+}
+
